@@ -6,15 +6,22 @@ A production-ready .NET 8 SaaS boilerplate. Skip the authentication plumbing, mu
 
 ## How it works
 
-AspFox is delivered as a `dotnet new` template. After purchase you receive a license key and an install command. Run it once, enter your project name, and you have a fully renamed, compilable codebase ready to extend.
+AspFox is delivered as a `dotnet new` template. After purchase
+you receive a download link via email. Save the file, run two
+commands, and you have a fully renamed compilable codebase with
+your project name throughout.
 
 ```bash
-dotnet new install AspFox.Templates
-dotnet new aspfox -n YourProject
-cd YourProject
-cp .env.example .env
-make up
+dotnet new install ./AspFox.Templates.1.0.0.nupkg
+dotnet new aspfox -n YourProjectName
 ```
+
+No GitHub repository access. No fork. No rebase conflicts when
+you extend the code.
+
+From there: copy `.env.example` to `.env`, fill in your keys,
+run `make up`, and the application is running locally.
+Full setup guide at [docs.aspfox.com](https://docs.aspfox.com).
 
 No GitHub repository access required. No fork. No rebase conflicts when you extend the code.
 
